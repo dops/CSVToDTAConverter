@@ -1,0 +1,107 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: arial, verdana, helvetica;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start of custom styles */
+h1 {
+	margin: 0 0 24px 0;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#main {
+	margin: 10px auto 0;
+	width: 700px;
+	padding: 16px;
+	border: 1px #ccc solid;
+}
+
+/* Form definitions */
+fieldset {
+	margin: 0 0 8px 0;
+	padding: 8px;
+	border: 1px #ccc solid;
+}
+
+.field {
+	margin: 3px 0;
+}
+
+.fieldSubmit {
+	text-align: right;
+}
+
+.fieldInfo {
+	color: #bbb;
+	font-size: 12px;
+}
+
+#submit-label {
+	display: none;
+}
+#submit-element {
+	text-align: right;
+}
+
+.message {
+	margin: 0 0 12px 0;
+	padding: 12px;
+	border: 1px #ccc dashed;
+	background: #eee none;
+}
+
+.successMessage {
+	border-color: #00F500;
+	background-color: #CEF6CE;
+}
+
+.errorMessage {
+	border-color: #F50000;
+	background-color: #F5A9A9;
+}

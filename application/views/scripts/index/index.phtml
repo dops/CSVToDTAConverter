@@ -1,0 +1,24 @@
+<!-- application/views/scripts/index/index.phtml -->
+
+<div id="welcome">
+    <h1>Welcome to the <span id="app-name">CSV to DTA Converter</span></h1>
+    <?php
+    if ($this->messages) {
+    	$messages	= array();
+    	foreach ($this->messages as $message) {
+    		$messages[key($message)][]	= current($message);
+    	}
+
+    	foreach ($messages as $type => $textArray) {
+    		?>
+    		<div class="message <?php echo $type; ?>Message">
+	    		<p><?php echo implode('<br />', $textArray); ?></p>
+	    	</div>
+    		<?php
+    	}
+    }
+    ?>
+    <div>
+    	<?php echo $this->convertCsvForm; ?>
+    </div>
+</div>
